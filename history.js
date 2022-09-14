@@ -1,4 +1,11 @@
 const histories = document.getElementById("histories");
+histories.classList.add(
+  "lg:grid",
+  "lg:grid-cols-3",
+  "sm:grid-cols",
+  "justify-center",
+  "gap-4"
+);
 
 function addHistory(questionText, timeTaken, errorCount) {
   const newRow = document.createElement("div");
@@ -27,7 +34,14 @@ function displayHistory() {
 
   previousTests.forEach((test) => {
     const newRow = document.createElement("div");
-    newRow.classList.add("card");
+    newRow.classList.add(
+      "card",
+      "flex",
+      "flex-col",
+      "justify-between",
+      "gap-1"
+      // "text-lg"
+    );
 
     newRow.innerHTML = `
   <h3>${test.questionText}</h3>

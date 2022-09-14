@@ -12,7 +12,7 @@ body {
 }
 
 .box-container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -139,14 +139,15 @@ button {
   border-radius: 10px;
   border: 2px solid #9dffad;
   cursor: pointer;
-  margin-top: 20px;
 }
 
-#histories {
+/* #histories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+} */
 
 .card {
   width: 100%;
@@ -189,5 +190,25 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+  #question {
+    font-size: 25px;
+    padding: 10px;
+    height: 250px;
+    text-align: center;
+  }
+
+  #display {
+    height: 200px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  #result {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
   }
 }

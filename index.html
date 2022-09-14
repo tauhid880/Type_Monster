@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Speed Monster</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +17,9 @@
     />
   </head>
   <body>
-    <h1 class="title"><img src="./logo.png" /></h1>
+    <h1 class="title flex items-center justify-center">
+      <img src="./logo.png" />
+    </h1>
     <div id="show-time">0 seconds</div>
 
     <div class="box-container">
@@ -23,12 +28,12 @@
       <div id="display" class="inactive"></div>
 
       <div class="buttons">
-        <button id="starts">START</button>
+        <button id="starts" class="bg-zinc-800 text-white">START</button>
       </div>
 
       <div class="divider-container">
         <div class="line"></div>
-        <h1 class="title2">History</h1>
+        <h1 class="title2 text-2xl">History</h1>
         <div class="line"></div>
       </div>
       <div id="histories"></div>
