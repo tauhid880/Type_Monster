@@ -28,46 +28,154 @@
     <div class="h-screen p-20">
       <div
         tabindex="0"
-        class="collapse border rounded-box border-slate-400 w-1/2 text-center ml-80"
+        class="collapse border rounded-box border-slate-400 text-center"
       >
         <div class="collapse-title text-xl font-medium text-white">
           Difference between Local storage and Session storage?
         </div>
-        <div class="collapse-content text-white">
-          <p>tabindex="0" attribute is necessary to make the div focusable</p>
+        <div class="collapse-content">
+          <div class="overflow-x-auto text-black">
+            <table class="table w-full">
+              <!-- head -->
+              <thead class="text-center">
+                <tr>
+                  <th></th>
+                  <th>Local storage</th>
+                  <th>Session storage</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <!-- row 1 -->
+                <tr>
+                  <th>1</th>
+                  <td>The storage capacity of local storage is 5MB/10MB</td>
+                  <td>The storage capacity of session storage is 5MB</td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <th>2</th>
+                  <td>
+                    As it is not session-based, it must be deleted via
+                    javascript or manually
+                  </td>
+                  <td>
+                    It’s session-based and works per window or tab. <br />
+                    This means that data is stored only for the duration of a
+                    session, <br />
+                    i.e., until the browser (or tab) is closed
+                  </td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <th>3</th>
+                  <td>There is no transfer of data to the server</td>
+                  <td>There is no transfer of data to the server</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div
         tabindex="0"
-        class="collapse border rounded-box border-slate-400 w-1/2 text-center ml-80 mt-10"
+        class="collapse border rounded-box border-slate-400 text-center mt-10"
       >
         <div class="collapse-title text-xl font-medium text-white">
           Difference between Global Scope abd Local scope?
         </div>
         <div class="collapse-content text-white">
-          <p>tabindex="0" attribute is necessary to make the div focusable</p>
+          <div class="overflow-x-auto text-black">
+            <table class="table w-full">
+              <!-- head -->
+              <thead class="text-center">
+                <tr>
+                  <th></th>
+                  <th>Global Scope</th>
+                  <th>Local scope</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <!-- row 1 -->
+                <tr>
+                  <th>1</th>
+                  <td>
+                    A variable declared at the top of a program or outside of a
+                    <br />
+                    function is considered a global scope variable.
+                  </td>
+                  <td>
+                    Block Scoping means declaring a variable inside the block or
+                    <br />
+                    curly brackets {} can not be accessed from outside the
+                    block.
+                  </td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <th>2</th>
+                  <td>
+                    Variables declare with thr var,let and const are quite
+                    <br />
+                    similar when declare inside a function
+                  </td>
+                  <td>
+                    Variables declare with thr var keyword can not have block
+                    scope
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div
         tabindex="0"
-        class="collapse border rounded-box border-slate-400 w-1/2 text-center ml-80 mt-10"
+        class="collapse border rounded-box border-slate-400 text-center mt-10"
       >
         <div class="collapse-title text-xl font-medium text-white">
           How event loop works?
         </div>
         <div class="collapse-content text-white">
-          <p>tabindex="0" attribute is necessary to make the div focusable</p>
+          <p>
+            The Event Loop has one simple job — to monitor the Call Stack and
+            the Callback Queue. If the Call Stack is empty, the Event Loop will
+            take the first event from the queue and will push it to the Call
+            Stack, which effectively runs it. Such an iteration is called a tick
+            in the Event Loop. Each event is just a function callback
+          </p>
         </div>
       </div>
       <div
         tabindex="0"
-        class="collapse border rounded-box border-slate-400 w-1/2 text-center ml-80 mt-10"
+        class="collapse border rounded-box border-slate-400 text-center mt-10"
       >
         <div class="collapse-title text-xl font-medium text-white">
           How many ways to get undefined?
         </div>
         <div class="collapse-content text-white">
-          <p>tabindex="0" attribute is necessary to make the div focusable</p>
+          <p class="font-bold">There are 8 ways to get undefined.</p>
+          <ol class="list-decimal list-inside text-lg">
+            <li>Variable that is not initialized will give undefined.</li>
+            <li>Function with no return will give undefined.</li>
+            <li>
+              If you pass less arguments in function call then, that parameter
+              will have undefined value.
+            </li>
+            <li>
+              If return has nothing on the right side will return undefined.
+            </li>
+            <li>
+              Property that doesn't exists on an object will give you undefined.
+            </li>
+            <li>
+              Accessing array elements outside of the index will give you
+              undefined.
+            </li>
+            <li>
+              Deleting an element inside an array will give you undefined.
+            </li>
+            <li>Set a value directly to undefined will give you undefined.</li>
+          </ol>
         </div>
       </div>
     </div>
